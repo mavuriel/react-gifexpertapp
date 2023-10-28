@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    'jest/globals': true,
   },
   settings: {
     react: {
@@ -13,6 +14,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'eslint-config-prettier',
+    'plugin:jest/recommended',
   ],
   overrides: [
     {
@@ -29,7 +31,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react'],
+  plugins: ['react', 'jest'],
   rules: {
     'no-unused-vars': 'warn',
     'react/prop-types': 'warn',
